@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Meal DB</title>
+</head>
+
+<body>
+    <h2 class="text-center text-warning my-5">Hungry! Then you are at the right place!!</h2>
+    <!-- search meals -->
+    <div class="input-group mb-3 w-50 mx-auto">
+        <input id="input-field" type="text" class="form-control" placeholder="Search meals that you want">
+        <button onclick="loadSearch()" id="btn-search" class="btn btn-outline-secondary">Search</button>
+    </div>
+
+    <p id="search-error" class="text-center text-danger">Please enter a food name</p>
+
+    <!-- meal details -->
+    <div id="detail-box" class="card mb-3 mx-auto" style="max-width: 540px;">
+    </div>
+    <!-- meal cards -->
+    <div id="meal-card" class="row row-cols-1 row-cols-md-3 g-4">
+    </div>
+    <script src="mealsDb.js"></script>
+</body>
+
+</html>
